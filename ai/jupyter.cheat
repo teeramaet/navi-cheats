@@ -1,0 +1,34 @@
+% Jupyter with uv
+
+# Run Jupyter Lab with temporary dependencies
+uv run --with jupyter --with pandas --with matplotlib jupyter lab
+
+# Install project dependencies from pyproject.toml
+uv sync
+
+# Create virtual environment
+uv venv
+
+# Activate virtual environment
+source .venv/bin/activate
+
+# Add dependency
+uv add pandas
+
+# Add development dependency
+uv add --dev jupyter
+
+# Run Python script with temporary dependency
+uv run --with requests script.py
+
+# Run IPython
+uv run --with ipython ipython
+
+# Show installed packages
+uv pip list
+
+# Update dependencies
+uv lock --upgrade
+
+# Remove virtual environment
+rm -rf .venv
