@@ -1,0 +1,20 @@
+% Update developer tools
+
+# Update uv
+uv self update
+
+# Update pnpm
+pnpm self-update
+
+# Update Rust toolchain
+rustup update
+
+# Update Juliaup
+juliaup update
+
+# Update Ollama
+ollama pull qwen3:8b
+
+# Update system packages (Ubuntu/Debian)
+sudo apt update && sudo apt upgrade -y
+
