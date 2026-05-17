@@ -1,5 +1,8 @@
 % Jupyter with uv
 
+# Create a project with bare option
+uv init example-name --bare
+
 # Run Jupyter Lab with temporary dependencies
 uv run --with jupyter --with pandas --with matplotlib jupyter lab
 
